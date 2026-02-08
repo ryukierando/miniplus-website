@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiniPlus</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- LOGIN -->
+    <section id="loginPanel" class="panel active">
+        <form id="loginForm">
+            <h2>Login</h2>
+
+            <input type="email" id="login_email" placeholder="e.g email@gmail.com" autocomplete="off">
+            <input type="password" id="login_password" placeholder="Password">
+
+            <button id="form-btn" type="submit">Login</button>
+
+            <div class="links">
+                <a id="gotoSignup">Sign Up</a>
+                <a id="gotoReset">Forgot Password</a>
+            </div>
+        </form>
+    </section>
+
+    <!-- SIGN UP -->
+    <section id="signupPanel" class="panel">
+        <form id="signupForm">
+            <h2>Create Account</h2>
+
+            <input type="email" id="su_email" placeholder="e.g email@gmail.com" autocomplete="off">
+            <input type="password" id="su_password" placeholder="Password">
+
+            <button id="form-btn" type="submit">Create</button>
+
+            <div class="links">
+                <a id="backLogin1">Back to login</a>
+            </div>
+        </form>
+    </section>
+
+    <!-- RESET -->
+    <section id="resetPanel" class="panel">
+        <form id="resetForm">
+            <h2>Reset Password</h2>
+
+            <input type="email" id="reset_email" placeholder="e.g email@gmail.com" autocomplete="off">
+
+            <button id="form-btn" type="submit">Reset</button>
+
+            <div class="links">
+                <a id="backLogin2">Back to login</a>
+            </div>
+        </form>
+    </section>
+
+<div id="dashboard">
+
+    <!-- ===== TOP NAVBAR ===== -->
+    <header class="topbar">
+
+        <div class="topbar-left">
+            <img src="./assets/miniPlus.png" class="logo">
+            <span class="brand">MINIPLUS</span>
+        </div>
+
+        <div class="topbar-right">
+            <button class="icon-btn">🔔</button>
+            <button class="icon-btn">☀</button>
+
+            <div class="user">
+                <span class="user-icon">👤</span>
+                <span class="username">Guest</span>
+            </div>
+        </div>
+
+    </header>
+
+
+    <!-- ===== BODY LAYOUT ===== -->
+    <div class="layout">
+
+        <!-- LEFT SIDEBAR -->
+        <aside class="sidebar">
+            <a class="side-link active">Profile</a>
+            <a class="side-link">Category</a>
+            <a class="side-link">All Products</a>
+            <a class="side-link">Shopping cart</a>
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main class="content">
+            <div class="content-inner">
+                <h1>Welcome!</h1>
+                <p>You are logged in.</p>
+
+                <div class="card">
+                    1
+                </div>
+
+                <div class="card">
+                    2
+                </div>
+
+                <div class="card">
+                    3
+                </div>
+
+                <div class="card">
+                    4
+                </div>
+
+                <div class="card">
+                    5
+                </div>
+
+                <div class="card">
+                    6
+                </div>
+
+            </div>
+        </main>
+
+    </div>
+
+</div>
+
+<script src="./js/index.js"></script>
+</body>
+</html>
