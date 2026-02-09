@@ -241,3 +241,29 @@ input.error{
     margin-top:20px;
     box-shadow:0 10px 25px rgba(0,0,0,0.08);
 }
+
+/* app viewport lock */
+html, body{
+    height:100%;
+    overflow:hidden;
+}
+
+/* the app becomes a fixed viewport */
+.app{
+    position:relative;
+    height:100vh;
+    width:100vw;
+    overflow:hidden;
+}
+
+/* every screen lives in the same layer */
+.panel,
+#dashboard{
+    position:absolute;
+    inset:0;
+}
+
+/* dashboard should start hidden like panels */
+#dashboard{
+    display:none;
+}
