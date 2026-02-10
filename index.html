@@ -83,13 +83,34 @@
         </div>
 
         <div class="topbar-right">
-            <button class="icon-btn">🔔</button>
-            <button class="icon-btn">☀</button>
+            <button id="notifBtn" class="icon-btn">🔔</button>
+            <button id="themeBtn" class="icon-btn">☀</button>
 
             <div class="user">
-                <span class="user-icon">👤</span>
+                <span id="profileBtn" class="user">👤</span>
                 <span class="username">Guest</span>
             </div>
+
+        <!-- Notification Panel -->
+        <div id="notifPanel" class="dropdown-panel">
+            <div class="dropdown-header">
+                <button id="notifAll">All</button>
+                <button id="notifUnread">Unread</button>
+            </div>
+
+            <div class="dropdown-content">
+                <p class="empty">No notifications</p>
+            </div>
+        </div>
+
+        <!-- Profile Panel -->
+        <div id="profilePanel" class="dropdown-panel">
+            <div class="dropdown-content">
+                <p id="profileEmail">email@gmail.com</p>
+                <button id="logoutBtn" class="danger">Logout</button>
+            </div>
+        </div>
+
         </div>
 
     </header>

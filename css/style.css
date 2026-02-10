@@ -290,4 +290,56 @@ html, body{
     filter: brightness(0.95);
 }
 
-/* Update panels array in JS to include welcomePanel */
+/* dropdown panels */
+.dropdown-panel{
+    position:absolute;
+    top:70px;
+    right:20px;
+    width:220px;
+    background:white;
+    border-radius:12px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+    padding:10px;
+    display:none;
+    z-index:200;
+}
+
+.dropdown-panel.active{
+    display:block;
+}
+
+.dropdown-header{
+    display:flex;
+    gap:6px;
+    margin-bottom:8px;
+}
+
+.dropdown-header button{
+    flex:1;
+    padding:6px;
+    border:none;
+    border-radius:6px;
+    background:#ececec;
+    cursor:pointer;
+}
+
+.dropdown-content{
+    font-size:14px;
+}
+
+.empty{
+    text-align:center;
+    color:#888;
+    padding:15px 0;
+}
+
+.danger{
+    width:100%;
+    margin-top:10px;
+    background:#e74c3c;
+    color:white;
+    border:none;
+    padding:8px;
+    border-radius:8px;
+    cursor:pointer;
+}
