@@ -267,3 +267,27 @@ html, body{
 #dashboard{
     display:none;
 }
+
+/* Welcome Panel Styles */
+.choice-btn {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background: linear-gradient(135deg, #6e6e6e, #3f3f3f, #1f1f1f);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.choice-btn:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.15);
+}
+
+.choice-btn:active {
+    transform: translateY(1px);
+    filter: brightness(0.95);
+}
+
+/* Update panels array in JS to include welcomePanel */

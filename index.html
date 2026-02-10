@@ -11,8 +11,21 @@
 
 <div class="app">
 
+    <!-- WELCOME PANEL (First Screen) -->
+    <section id="welcomePanel" class="panel active">
+        <form id="welcomeForm">
+            <h2>Welcome to MiniPlus</h2>
+            <p>Do you already have an account?</p>
+            
+            <div style="display: flex; flex-direction: column; gap: 10px; margin: 20px 0;">
+                <button type="button" id="yesAccountBtn" class="choice-btn">Yes, I have an account</button>
+                <button type="button" id="noAccountBtn" class="choice-btn">No, I need to sign up</button>
+            </div>
+        </form>
+    </section>
+
     <!-- LOGIN -->
-    <section id="loginPanel" class="panel active">
+    <section id="loginPanel" class="panel">
         <form id="loginForm">
             <h2>Login</h2>
 

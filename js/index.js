@@ -8,13 +8,24 @@ function saveUsers(users){
 }
 
 // ===== PANEL SWITCH =====
-const panels = ["loginPanel","signupPanel","resetPanel","dashboard"];
+const panels = ["welcomePanel", "loginPanel", "signupPanel", "resetPanel", "dashboard"];
 
 function show(id){
     panels.forEach(p=>{
-        document.getElementById(p).style.display = "none";
+        const element = document.getElementById(p);
+        if (element) {
+            element.style.display = "none";
+        }
     });
-    document.getElementById(id).style.display = id==="dashboard"?"flex":"flex";
+    
+    const element = document.getElementById(id);
+    if (element) {
+        if (id === "dashboard") {
+            element.style.display = "flex";
+        } else {
+            element.style.display = "flex";
+        }
+    }
 }
 
 // ===== INPUT VALIDATION =====
@@ -105,3 +116,6 @@ gotoSignup.onclick=()=>show("signupPanel");
 gotoReset.onclick=()=>show("resetPanel");
 backLogin1.onclick=()=>show("loginPanel");
 backLogin2.onclick=()=>show("loginPanel");
+// ===== WELCOME PANEL =====
+yesAccountBtn.onclick = () => show("loginPanel");
+noAccountBtn.onclick = () => show("signupPanel");
